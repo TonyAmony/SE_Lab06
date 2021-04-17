@@ -16,19 +16,19 @@ using namespace std;
         double abs();
 
         friend istream& operator >> ( istream&, Complex&);
-        friend ostream& operator << (ostream&, Complex &);
+        friend ostream& operator << (ostream&, Complex&);
 
         Complex operator + (const Complex&);
         Complex operator - (const Complex&);
         Complex operator + (const double&);
 
         friend 	Complex operator + (const double&, const Complex&);
-        Complex operator - (const double&);
+            Complex operator - (const double&);
         friend Complex operator - (const 	double&, const Complex&);
-        Complex operator * (const Complex&);
-        Complex operator * (const double&);
+            Complex operator * (const Complex&);
+            Complex operator * (const double&);
         friend Complex operator* (const double&, const Complex&);
-        Complex operator / (const double&);
+            Complex operator / (const double&);
 
         Complex& operator += (const Complex&);
         Complex& operator -= (const Complex&);
@@ -40,5 +40,4 @@ using namespace std;
         Complex& operator =  (const Complex&);
         Complex& operator =  (const double&);
         };
-
     #endif
